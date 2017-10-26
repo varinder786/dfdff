@@ -1,0 +1,560 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        $(document).on("pagecreate", "#fade_page1", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel1").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel1").panel("open");
+
+                    }
+                }
+            });
+        });
+        $(document).on("pagecreate", "#fade_page2", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel2").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel2").panel("open");
+
+                    }
+                }
+            });
+        });
+        $(document).on("pagecreate", "#fade_page3", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel3").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel3").panel("open");
+
+                    }
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h2>Books in Library System</h2>
+
+
+            <div class="ui-block-b">
+                <div class="ui-body ui-body-a">
+
+                    <div class="ui-block-a">
+                        <p>
+                            <a href="#page1" data-transition="flow"><img src="img/book1.jpg" width="150px" height="200px"></a>
+                        </p>
+                    </div>
+                    <div class="ui-block-a">
+                        <p>
+                            <a href="#page2" data-transition="flow"><img src="img/book2.jpg" width="150px" height="200px"></a>
+                        </p>
+                    </div>
+                    <div class="ui-block-a">
+                        <p>
+                            <a href="#page3" data-transition="flow"><img src="img/book3.jpg" width="150px" height="200px"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ui-block-b">
+                <div class="ui-body ui-body-a">
+
+                    <div class="ui-block-a">
+                        <p>
+                            <a href="#page4"><img src="img/book4.jpg" width="150px" height="200px"></a>
+                        </p>
+                    </div>
+                    <div class="ui-block-a">
+                        <p>
+                            <a href="#page5"><img src="img/book5.jpg" width="150px" height="200px"></a>
+                        </p>
+                    </div>
+                    <div class="ui-block-a">
+                        <p>
+                            <a href="#page6"><img src="img/book6.jpg" width="150px" height="200px"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h2>Mastering Swift 3</h2>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                        <p>
+                            <a href="book.html#1"><img src="img/book1.jpg" width="500px" height="500px"></a>
+                        </p>
+                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    Author : shakesappear
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Language : English
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Type : IT
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    <a class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" href="#home" data-transition="flow">Books </a>
+
+                                </td>
+                            </tr>
+                            <a class="ui-btn ui-btn-icon-left ui-icon-arrow-r" href="#fade_page1" data-transition="pop">start reading</a>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1 id="2">Mathematics</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                        <p>
+                            <a href="book.html#1"><img src="img/book2.jpg" width="500px" height="500px"></a>
+                        </p>
+                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    Author : Frank
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Language : English
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Type : logical
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    <a class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" href="#home" data-transition="flow">Books </a>
+
+                                </td>
+                            </tr>
+                            <a class="ui-btn ui-btn-icon-left ui-icon-arrow-r" href="#fade_page1" data-transition="pop">start reading</a>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div data-role="page" id="page3">
+        <div data-role="header">
+            <h1>Computer Networks</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                        <p>
+                            <a href="book.html#1"><img src="img/book3.jpg" width="500px" height="500px"></a>
+                        </p>
+                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    Author : Andrew S. Tanenbaum
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Language : English
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Type : Technical
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    <a class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" href="#home" data-transition="flow">Books </a>
+
+                                </td>
+                            </tr>
+                            <a class="ui-btn ui-btn-icon-left ui-icon-arrow-r" href="#fade_page1" data-transition="pop">start reading</a>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div data-role="page" id="page4">
+        <div data-role="header">
+            <h1>The Little kingdom</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                        <p>
+                            <a href="book.html#1"><img src="img/book4.jpg" width="500px" height="500px"></a>
+                        </p>
+                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    Author : Michael Moritz
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Language : English
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Type : Technical
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    <a class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" href="#home" data-transition="flow">Books </a>
+
+                                </td>
+                            </tr>
+                            <a class="ui-btn ui-btn-icon-left ui-icon-arrow-r" href="#fade_page1" data-transition="pop">start reading</a>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div data-role="page" id="page5">
+        <div data-role="header">
+            <h1>php special</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                        <p>
+                            <a href="book.html#1"><img src="img/book5.jpg" width="500px" height="500px"></a>
+                        </p>
+                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    Author : lorna jabem
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Language : English
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Type : Theory
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    <a class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" href="#home" data-transition="flow">Books </a>
+
+                                </td>
+                            </tr>
+                            <a class="ui-btn ui-btn-icon-left ui-icon-arrow-r" href="#fade_page1" data-transition="pop">start reading</a>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div data-role="page" id="page6">
+        <div data-role="header">
+            <h1>maths</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                        <p>
+                            <a href="book.html#1"><img src="img/book6.jpg" width="500px" height="500px"></a>
+                        </p>
+                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    Author : mitchchell
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Language : English
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Type : Theory
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    <a class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" href="#home" data-transition="flow">Books </a>
+
+                                </td>
+                            </tr>
+                            <a class="ui-btn ui-btn-icon-left ui-icon-arrow-r" href="#fade_page1" data-transition="pop">start reading</a>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div data-role="page" id="fade_page1">
+        <div data-role="header">
+            <h2>Php web services</h2>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>Data structures are the way to represent composite entities using regular PHP variables. Those familiar with database design and database implementation know about the concept of database normalization. Data structures in PHP represent a similar
+                concept. Whenever dealing with complex concepts and representing them in PHP, data structures are a way to normalize PHP variables to consistently and uniformly represent complex concepts. PHP Native Structures[edit] String is a structure
+                to represent a singular value (aka scalar) Array is a structure to represent a list of values (aka vector)
+                <br><br> Examples[edit]
+                <br><br> String Example: $person_name = 'Alice';</p>
+
+        </div>
+
+        <div data-role="footer">
+            <div class="ui-grid-b" style="margin-left:15%;">
+                <div class="ui-block-a">
+                    <a class="ui-btn ui-icon-arrow-home ui-btn-icon-left ui-btn-icon-notext" href="#home" data-transition="flow">home</a>
+                </div>
+
+                <div class="ui-block-c">
+                    <a href="#fade_page2" class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-icon-notext" data-transition="flow">right</a>
+                </div>
+            </div>
+
+        </div>
+        <div data-role="panel" id="panel1">
+            <h2>Book List</h2>
+            <ul data-role="listview">
+                <li>
+                    <a href="#page1"><img src="img/book1.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page2"><img src="img/book2.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page3"><img src="img/book3.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page4"><img src="img/book4.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page5"><img src="img/book5.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page6"><img src="img/book6.jpg"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="fade_page2">
+        <div data-role="header">
+            <h2>PHP Composite Structures</h2>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>SimpleDictionary is a structure to represent an unordered sequence of name-value pairs. In native PHP, this is done using the standard Array with strings for indices. SimpleSequence is a structure to represent an ordered sequence of values.
+                In native PHP, this is done using the standard Array with numeric indices. SimpleTable (aod) is an ordered sequence of one or more SimpleDictionary where each SimpleDictionary instance has matching names. SimpleTable (aoa) is a sequence
+                of one or more SimpleSequence where each SimpleSequence instance has corresponding indices. The square brackets method allows you to set up by directly setting the values. For example, to make $foobar[1] = $foo, all you need to do is:
+                <br><br> Examples[edit]
+                <br><br> SimpleDictionary Examples:<br><br> $person_names = Array( 'person1'=> 'Alice', 'person2'=> 'Bob', 'person3'=> 'Charlie', ); $alice_info = Array( 'first_name'=> 'Alice', 'sex'=> 'Female', 'age'=> '26', 'email'=> 'alice@example.com',
+                );
+            </p>
+
+        </div>
+
+        <div data-role="footer">
+            <div class="ui-grid-b" style="margin-left:15%;">
+                <div class="ui-block-a">
+                    <a class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-icon-notext" href="#fade_page1" data-transition="flow">left</a>
+                </div>
+                <div class="ui-block-b">
+                    <a class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext" href="#home" data-transition="flow">home</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#fade_page3" class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-icon-notext" data-transition="flow">next</a>
+                </div>
+            </div>
+
+        </div>
+        <div data-role="panel" id="panel2">
+            <h2>Book List</h2>
+            <ul data-role="listview">
+                <li>
+                    <a href="#page1"><img src="img/book1.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page2"><img src="img/book2.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page3"><img src="img/book3.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page4"><img src="img/book4.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page5"><img src="img/book5.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page6"><img src="img/book6.jpg"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="fade_page3">
+        <div data-role="header">
+            <h2>Example</h2>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>SimpleDictionary Examples:<br><br>
+                <br> $user_profile = Array(<br> main => Array(<br> first_name => "Archibald",<br> last_name => "Shaw",<br> sex => "male",<br> age => "33", <br> ),
+                <br> guardian => Array(<br> first_name => "",<br> last_name => "",<br> ),
+                <br> children => Array(<br> 0 => Array(<br> first_name => "Sally",<br> last_name => "Shaw",<br> ),
+                <br> 1 => Array(<br> first_name => "Scott",<br> last_name => "Shaw",<br> ),
+                <br> ),
+                <br> );
+
+            </p>
+
+        </div>
+
+        <div data-role="footer">
+            <div class="ui-grid-b" style="margin-left:15%;">
+                <div class="ui-block-a">
+                    <a class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-icon-notext" href="#fade_page2" data-transition="flow">previous</a>
+                </div>
+                <div class="ui-block-b">
+                    <a class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext" href="#home" data-transition="flow">home</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#fade_page1" class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-icon-notext" data-transition="flow">first</a>
+                </div>
+            </div>
+
+        </div>
+        <div data-role="panel" id="panel3">
+            <h2>Book List</h2>
+            <ul data-role="listview">
+                <li>
+                    <a href="#page1"><img src="img/book1.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page2"><img src="img/book2.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page3"><img src="img/book3.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page4"><img src="img/book4.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page5"><img src="img/book5.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page6"><img src="img/book6.jpg"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
